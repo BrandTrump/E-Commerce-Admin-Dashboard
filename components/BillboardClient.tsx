@@ -5,15 +5,20 @@ import Heading from "./Heading";
 import { Button } from "./ui/button";
 import { Separator } from "./ui/separator";
 import { useParams, useRouter } from "next/navigation";
+import { BillboardColumn } from "./Columns";
 
-function BillboardClient() {
+interface BillboardClientProps {
+  data: BillboardColumn[];
+}
+
+function BillboardClient({ data }: BillboardClientProps) {
   const router = useRouter();
   const params = useParams();
   return (
     <>
       <div className="flex items-center justify-between">
         <Heading
-          title="Billboards (0)"
+          title={`Billboards (${data.length})`}
           description="Manage billboards for your store"
         />
         <Button
