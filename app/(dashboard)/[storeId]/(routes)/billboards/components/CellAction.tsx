@@ -1,24 +1,23 @@
 "use client";
 
 import { Copy, Edit, MoreHorizontal, Trash } from "lucide-react";
-import { BillboardColumn } from "../app/(dashboard)/[storeId]/(routes)/billboards/components/Columns";
-import { Button } from "./ui/button";
+import { BillboardColumn } from "./Columns";
+import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuLabel,
   DropdownMenuTrigger,
-} from "./ui/dropdown-menu";
+} from "@/components/ui/dropdown-menu";
 import { toast } from "react-hot-toast";
 import { useParams, useRouter } from "next/navigation";
 import axios from "axios";
 import { useState } from "react";
-import AlertModal from "./modals/AlertModal";
-import { CategoryColumn } from "@/app/(dashboard)/[storeId]/(routes)/categories/components/Columns";
+import AlertModal from "@/components/modals/AlertModal";
 
 interface CellActionProps {
-  data: BillboardColumn | CategoryColumn;
+  data: BillboardColumn;
 }
 
 function CellAction({ data }: CellActionProps) {
