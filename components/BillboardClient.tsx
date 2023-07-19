@@ -5,7 +5,8 @@ import Heading from "./Heading";
 import { Button } from "./ui/button";
 import { Separator } from "./ui/separator";
 import { useParams, useRouter } from "next/navigation";
-import { BillboardColumn } from "./Columns";
+import { BillboardColumn, columns } from "./Columns";
+import { DataTable } from "./ui/data-table";
 
 interface BillboardClientProps {
   data: BillboardColumn[];
@@ -29,6 +30,7 @@ function BillboardClient({ data }: BillboardClientProps) {
         </Button>
       </div>
       <Separator />
+      <DataTable columns={columns} data={data} />
     </>
   );
 }
