@@ -1,7 +1,7 @@
 "use client";
 
 import { Copy, Edit, MoreHorizontal, Trash } from "lucide-react";
-import { BillboardColumn } from "./Columns";
+import { BillboardColumn } from "../app/(dashboard)/[storeId]/(routes)/billboards/components/Columns";
 import { Button } from "./ui/button";
 import {
   DropdownMenu,
@@ -15,9 +15,10 @@ import { useParams, useRouter } from "next/navigation";
 import axios from "axios";
 import { useState } from "react";
 import AlertModal from "./modals/AlertModal";
+import { CategoryColumn } from "@/app/(dashboard)/[storeId]/(routes)/categories/components/Columns";
 
 interface CellActionProps {
-  data: BillboardColumn;
+  data: BillboardColumn | CategoryColumn;
 }
 
 function CellAction({ data }: CellActionProps) {
