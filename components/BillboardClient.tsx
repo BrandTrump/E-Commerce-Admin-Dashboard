@@ -1,13 +1,16 @@
 "use client";
 
 import { Plus } from "lucide-react";
-import Heading from "./Heading";
-import { Button } from "./ui/button";
-import { Separator } from "./ui/separator";
+import Heading from "@/components/Heading";
+import { Button } from "@/components/ui/button";
+import { Separator } from "@/components/ui/separator";
 import { useParams, useRouter } from "next/navigation";
-import { BillboardColumn, columns } from "./Columns";
-import { DataTable } from "./ui/data-table";
-import ApiList from "./ui/api-list";
+import {
+  BillboardColumn,
+  columns,
+} from "@/app/(dashboard)/[storeId]/(routes)/billboards/components/Columns";
+import { DataTable } from "@/components/ui/data-table";
+import ApiList from "@/components/ui/api-list";
 
 interface BillboardClientProps {
   data: BillboardColumn[];
