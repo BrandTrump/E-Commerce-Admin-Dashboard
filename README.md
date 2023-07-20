@@ -7,8 +7,6 @@
 - Planetscale: https://planetscale.com/
 - Safer to use style tag with dynamic styling because of the chance that tailwind will not complie dynamic css:
 ```js
-const data = await fetchDefinition(word);
-
  <div className="h-6 w-6 rounded-full border"
     style={{ backgroundColor: row.original.value }}
   ></div>
