@@ -21,7 +21,7 @@ function OrdersClient({ data }: OrdersClientProps) {
       />
 
       <Separator />
-      <DataTable columns={columns} data={data} searchKey="label" />
+      <DataTable columns={columns} data={data} searchKey="products" />
     </>
   );
 }
