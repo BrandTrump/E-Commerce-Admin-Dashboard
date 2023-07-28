@@ -1,3 +1,6 @@
+## Credit
+Tutorial by [Code With Antonio](https://www.youtube.com/@codewithantonio) - https://www.youtube.com/watch?v=5miHyP6lExg&list=LL&index=3
+
 ## Learnings
 - Clerk authentication with Next.js 13
 - Setting up sign-in/sign-up: https://clerk.com/docs/nextjs/get-started-with-nextjs
